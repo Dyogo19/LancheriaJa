@@ -3,14 +3,14 @@ package model;
 public class Endereço {
 
     private String nomeDaRua;
-    private String bairro;
-    private String cidade;
+    private String nomeDoBairro;
+    private String nomeDaCidade;
     private String uf;
 
-    public Endereço(String nomeDaRua, String bairro, String cidade, String uf) {
+    public Endereço(String nomeDaRua, String nomeDoBairro, String nomeDaCidade, String uf) {
         this.nomeDaRua = nomeDaRua;
-        this.bairro = bairro;
-        this.cidade = cidade;
+        this.nomeDoBairro = nomeDoBairro;
+        this.nomeDaCidade = nomeDaCidade;
         this.uf = uf;
     }
 
@@ -22,20 +22,20 @@ public class Endereço {
         this.nomeDaRua = nomeDaRua;
     }
 
-    public String getBairro() {
-        return bairro;
+    public String getnomeDoBairro() {
+        return nomeDoBairro;
     }
 
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public void setnomeDoBairro(String nomeDoBairro) {
+        this.nomeDoBairro = nomeDoBairro;
     }
 
-    public String getCidade() {
-        return cidade;
+    public String getnomeDaCidade() {
+        return nomeDaCidade;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setnomeDaCidade(String nomeDaCidade) {
+        this.nomeDaCidade = nomeDaCidade;
     }
 
     public String getUf() {

@@ -2,15 +2,15 @@ package model;
 
 public class Usuario {
 
-        private String nome;
-        private String cpf;
-        private Endereço endereço;
-        private long idUsuario;
-        private static long ultimoIdUsuario;
+    private String nomeUsuario;
+    private String cpfUsurio;
+    private Endereço endereço;
+    private long idUsuario;
+    private static long ultimoIdUsuario;
 
-    public Usuario(String nome, String cpf, Endereço endereço) {
-        this.nome = nome;
-        this.cpf = cpf;
+    public Usuario(String nomeUsuario, String cpfUsurio, Endereço endereço) {
+        this.nomeUsuario = nomeUsuario;
+        this.cpfUsurio = cpfUsurio;
         this.endereço = endereço;
     }
 
@@ -21,20 +21,20 @@ public class Usuario {
 
     }
 
-    public String getNome() {
-        return nome;
+    public String getnomeUsuario() {
+        return nomeUsuario;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setnomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getcpfUsurio() {
+        return cpfUsurio;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setcpfUsurio(String cpf) {
+        this.cpfUsurio = cpfUsurio;
     }
 
     public Endereço getEndereço() {
